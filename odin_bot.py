@@ -351,7 +351,7 @@ async def main():
             await process_trades(trades_data)
         except Exception as e:
             log_message("运行出错: {}".format(e))
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
 
 if __name__ == "__main__":
     asyncio.run(main()) 
